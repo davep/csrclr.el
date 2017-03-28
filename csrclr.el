@@ -32,12 +32,13 @@
 
 (defun csrclr ()
   "Set the cursor colour depending on the environment."
-  (set-cursor-color (cond ((and buffer-read-only (buffer-file-name))
-                           csrclr-read-only)
-                          (overwrite-mode
-                           csrclr-overwrite)
-                          (t
-                           csrclr-default))))
+  (set-cursor-color
+   (cond ((and buffer-read-only (buffer-file-name))
+          csrclr-read-only)
+         (overwrite-mode
+          csrclr-overwrite)
+         (t
+          csrclr-default))))
 
 (add-hook 'post-command-hook #'csrclr)
 
