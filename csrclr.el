@@ -1,6 +1,10 @@
 ;;; csrclr.el --- Set cursor colour depending on environment.
-;; By Dave Pearson <davep@davep.org>
-;; $Revision: 1.2 $
+;; Copyright 2000-2017 by Dave Pearson <davep@davep.org>
+
+;; Author: Dave Pearson <davep@davep.org>
+;; Version: 1.2
+;; Keywords: convenience
+;; URL: https://github.com/davep/csrclr.el
 
 ;; Attempt to handle older/other emacs.
 (eval-and-compile
