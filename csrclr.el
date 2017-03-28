@@ -31,7 +31,7 @@
   "Default cursor colour."
   :type  'string
   :group 'csrclr)
-  
+
 ;; Main code:
 
 (defun csrclr ()
